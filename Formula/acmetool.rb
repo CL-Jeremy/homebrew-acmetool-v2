@@ -8,8 +8,9 @@ class Acmetool < Formula
 
   bottle do
     cellar :any_skip_relocation
-    rebuild 1
-    sha256 "859ddcc717399c6724283beece51c0a93497e00be685d3f1cfb7153506cbd9bb" => :macos
+    root_url "https://github.com/CL-Jeremy/homebrew-acmetool-v2/releases/download/0.2.1"
+    sha256 "07e5cffe33ab0ef7dd6e1c2f23422eb7a40e5eb7e78e4dd180fc8da6622f132d" => :yosemite
+    sha256 "a2a86492314e3b0f307a31f2c16a322a32b61ebf253c50010c59dc4c09043cb7" => :x86_64_linux
   end
 
   depends_on "go" => :build
